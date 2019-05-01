@@ -1,0 +1,17 @@
+#+STARTUP: content
+#+AUTHOR: Tuomo Syvänperä
+
+#+HUGO_BASE_DIR: ../
+#+HUGO_AUTO_SET_LASTMOD: t
+
+* Pages
+:PROPERTIES:
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+:EXPORT_HUGO_SECTION: .
+:EXPORT_HUGO_WEIGHT: auto
+:END:
+** About
+:PROPERTIES:
+:EXPORT_FILE_NAME: about
+:END:
+*** This is the About page

@@ -1,0 +1,45 @@
+#+STARTUP: content
+#+AUTHOR: Tuomo Syvänperä
+
+#+HUGO_BASE_DIR: ../
+#+HUGO_AUTO_SET_LASTMOD: t
+
+* Posts
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: posts
+  :END:
+** Emacs                                                               :@emacs:
+*** DONE First Post                                                 :hugo:org:
+CLOSED: [2019-05-01 Wed 09:02]
+:PROPERTIES:
+:EXPORT_FILE_NAME: first-post
+:END:
+**** First heading within the post
+- This post will be exported as
+  =content/posts/first-post.md=.
+- Its title will be "First Post".
+- It will have /hugo/ and /org/ tags.
+- The /lastmod/ property in the front-matter is set automatically to
+  the time of export.
+- It's draft state will be marked as =true= as the subtree has the
+  todo state set to /TODO/.
+
+#+BEGIN_SRC bash -l 7 :hl_lines 8
+echo 'Some source code content'
+echo 'This line will be highlighted'
+echo "This one won't"
+#+END_SRC
+
+And here's some Emacs Lisp:
+#+BEGIN_SRC emacs-lisp
+(def-package! org-gcal
+  :commands (org-gcal-sync
+             org-gcal-fetch
+             org-gcal-post-at-point
+             org-gcal-delete-at-point)
+  :config
+  (load-file "~/.emacs-secrets.el")
+  ;; hack to avoid the deferred.el error
+  (defun org-gcal--notify (title mes)
+    (message "org-gcal::%s - %s" title mes)))
+#+END_SRC
