@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://tinimini.netlify.com/"
 languageCode = "en-us"
 title = "My personal blog"
 theme = "ezhil"
@@ -10,7 +10,7 @@ pygmentscodefencesguesssyntax = true
 
 # Your Google analytics code.
 # googleAnalytics = "UA-123-45"
-# Your Disqus sortname.
+# Your Disqus shortname.
 disqusShortname = "localhost"
 
 [params]
