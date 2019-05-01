@@ -1,11 +1,9 @@
 +++
 title = "First Post"
 author = ["Tuomo Syvänperä"]
-date = 2019-05-01T09:02:00+03:00
-lastmod = 2019-05-01T11:36:22+03:00
+lastmod = 2019-05-01T15:07:25+03:00
 tags = ["hugo", "org"]
-categories = ["emacs"]
-draft = false
+draft = true
 +++
 
 ## First heading within the post {#first-heading-within-the-post}
@@ -14,18 +12,10 @@ draft = false
     `content/posts/first-post.md`.
 -   Its title will be "First Post".
 -   It will have _hugo_ and _org_ tags.
--   The _lastmod_ property in the front-matter is set automatically to
-    the time of export.
 -   It's draft state will be marked as `true` as the subtree has the
     todo state set to _TODO_.
 
-{{< highlight 7ang "hl_lines=8" >}}
-echo 'Some source code content'
-echo 'This line will be highlighted'
-echo "This one won't"
-{{< /highlight >}}
-
-And here's some Emacs Lisp:
+And here's some code:
 
 ```emacs-lisp
 (def-package! org-gcal

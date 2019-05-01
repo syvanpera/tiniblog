@@ -15,3 +15,9 @@
 :EXPORT_FILE_NAME: about
 :END:
 *** This is the About page
+
+* Footnotes
+* COMMENT Local Variables                          :ARCHIVE:
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:
