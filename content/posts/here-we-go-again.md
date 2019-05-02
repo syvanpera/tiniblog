@@ -1,10 +1,11 @@
 +++
 title = "Let's try this blogging thing again"
 author = ["Tuomo Syvänperä"]
-lastmod = 2019-05-02T13:35:17+03:00
+date = 2019-05-02T13:39:00+03:00
+lastmod = 2019-05-02T13:39:11+03:00
 tags = ["emacs", "hugo", "org"]
 type = "post"
-draft = true
+draft = false
 +++
 
 I've tried a few times in the past to start writing a blog, but it has never

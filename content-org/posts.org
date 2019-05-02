@@ -11,7 +11,8 @@
 :EXPORT_HUGO_SECTION: posts
 :EXPORT_HUGO_TYPE: post
 :END:
-** DRAFT Let's try this blogging thing again                   :emacs:hugo:org:
+** DONE Let's try this blogging thing again                    :emacs:hugo:org:
+CLOSED: [2019-05-02 Thu 13:39]
 :PROPERTIES:
 :EXPORT_FILE_NAME: here-we-go-again
 :END:
