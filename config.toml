@@ -4,7 +4,7 @@ title = "My personal blog"
 theme = "ezhil"
 
 # Enable syntax highlighting.
-pygmentsstyle = "vs"
+pygmentsstyle = "emacs"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
