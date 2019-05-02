@@ -1,19 +1,14 @@
-baseURL = "https://blog.tinimini.fi/"
+baseurl = "https://example.com/"
 languageCode = "en-us"
-theme = "terminal"
+theme = "hugo-theme-terminal"
 paginate = 5
-
-# Enable syntax highlighting.
-pygmentsstyle = "emacs"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
 
 [params]
   contentTypeName = "post"
   themeColor = "orange"
   showMenuItems = 2
   fullWidthTheme = false
-  centerTheme = true
+  centerTheme = false
 
 [languages]
   [languages.en]
@@ -34,6 +29,7 @@ pygmentscodefencesguesssyntax = true
         identifier = "about"
         name = "About"
         url = "/about"
-
-[taxonomies]
-  tag = "tags"
+      [[languages.en.menu.main]]
+        identifier = "showcase"
+        name = "Showcase"
+        url = "/showcase"
