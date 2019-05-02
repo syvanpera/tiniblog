@@ -51,7 +51,7 @@ So what *does* my publishing flow look like?
   3. *DONE*: Which means it's ready to be published. When you mark it as done in
      Org it automatically sets the /CLOSED/ time for it, which is used as the
      publication time in Hugo.
-- I use ox-hugo to convert the org file to the markdown that Hugo
+- I use [[https://ox-hugo.scripter.co/][ox-hugo]] to convert the org file to the markdown that Hugo
   supports. I've set it up so that when I save the /posts/ file, Emacs
   automatically kicks in he ox-hugo conversion.
 - I run a local Hugo installation (with the help of Prodigy on Emacs) too and

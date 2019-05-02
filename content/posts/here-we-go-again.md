@@ -2,7 +2,7 @@
 title = "Let's try this blogging thing again"
 author = ["Tuomo Syvänperä"]
 date = 2019-05-02T13:39:00+03:00
-lastmod = 2019-05-02T13:39:11+03:00
+lastmod = 2019-05-02T13:46:30+03:00
 tags = ["emacs", "hugo", "org"]
 type = "post"
 draft = false
@@ -43,7 +43,7 @@ So what **does** my publishing flow look like?
     3.  **DONE**: Which means it's ready to be published. When you mark it as done in
         Org it automatically sets the _CLOSED_ time for it, which is used as the
         publication time in Hugo.
--   I use ox-hugo to convert the org file to the markdown that Hugo
+-   I use [ox-hugo](https://ox-hugo.scripter.co/) to convert the org file to the markdown that Hugo
     supports. I've set it up so that when I save the _posts_ file, Emacs
     automatically kicks in he ox-hugo conversion.
 -   I run a local Hugo installation (with the help of Prodigy on Emacs) too and
