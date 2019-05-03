@@ -4,7 +4,7 @@ theme = "terminal"
 paginate = 5
 
 # Enable syntax highlighting.
-pygmentsstyle = "emacs"
+pygmentsstyle = "dracula"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
