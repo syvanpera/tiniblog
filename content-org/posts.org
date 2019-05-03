@@ -62,7 +62,7 @@ So what *does* my publishing flow look like?
   changes to the /master/ branch of my blog repo in [[https://github.com/][Github]] and [[http://www.netlify.com][Netlify]]
   automatically picks up the changes and builds and deploys the new version.
 
-Here's a screenshot of my setup, editing this very post.
+#+caption: Here's a screenshot of my setup, editing this very post.
 [[/images/img-2019-05-02-132213.png]]
 
 What's next? Well I'd at least want to replace the theme of my blog with

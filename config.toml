@@ -17,8 +17,8 @@ pygmentscodefencesguesssyntax = true
 
 [languages]
   [languages.en]
-    title = "Terminal"
-    subtitle = "A simple, retro theme for Hugo"
+    title = "Tiniblog"
+    subtitle = "It's nothing much really"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
@@ -26,7 +26,7 @@ pygmentscodefencesguesssyntax = true
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "Terminal"
+      logoText = "Tiniblog"
       logoHomeLink = "/"
 
     # [languages.en.menu]

@@ -2,7 +2,7 @@
 title = "Let's try this blogging thing again"
 author = ["Tuomo Syvänperä"]
 date = 2019-05-02T13:39:00+03:00
-lastmod = 2019-05-02T13:46:30+03:00
+lastmod = 2019-05-03T10:12:19+03:00
 tags = ["emacs", "hugo", "org"]
 type = "post"
 draft = false
@@ -54,8 +54,7 @@ So what **does** my publishing flow look like?
     changes to the _master_ branch of my blog repo in [Github](https://github.com/) and [Netlify](http://www.netlify.com)
     automatically picks up the changes and builds and deploys the new version.
 
-Here's a screenshot of my setup, editing this very post.
-![](/images/img-2019-05-02-132213.png)
+{{< figure src="/images/img-2019-05-02-132213.png" caption="Figure 1: Here's a screenshot of my setup, editing this very post." >}}
 
 What's next? Well I'd at least want to replace the theme of my blog with
 something a bit nicer, but I'm not interested in tweaking HTML & CSS right
