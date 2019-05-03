@@ -10,7 +10,7 @@ pygmentscodefencesguesssyntax = true
 
 [params]
   contentTypeName = "post"
-  themeColor = "orange"
+  themeColor = "blue"
   showMenuItems = 2
   fullWidthTheme = false
   centerTheme = true
