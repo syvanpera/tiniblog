@@ -2,7 +2,7 @@
 title = "Adding screenshots to a post"
 author = ["Tuomo Syvänperä"]
 date = 2019-05-04T21:38:00+03:00
-lastmod = 2019-05-04T21:41:53+03:00
+lastmod = 2019-05-04T21:42:35+03:00
 tags = ["hugo", "emacs", "org"]
 type = "post"
 draft = false
@@ -26,8 +26,9 @@ screenshot from the `~/Pictures/Screenshots` folder to my Hugo static image
 folder and also returns the proper path to the image which can be used in a Hugo
 `figure`.
 
-So basically all I do is hit `Super+4`, take the shot and in Emacs I just type
-`scrot` and hit `TAB`, write the caption and bam! Instant embedded screenshot!
+So basically all I do is hit `Super+Shift+4`, take the shot and in Emacs I just
+type `scrot` and hit `TAB`, write the caption and bam! Instant embedded
+screenshot!
 
 Below you can see the YASnippet definition, elisp function and shell script used.
 
