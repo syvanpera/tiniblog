@@ -2,8 +2,8 @@
 title = "Adding screenshots to a post"
 author = ["Tuomo Syvänperä"]
 date = 2019-05-04T21:38:00+03:00
-lastmod = 2019-05-04T21:42:35+03:00
-tags = ["hugo", "emacs", "org"]
+lastmod = 2019-05-04T21:44:38+03:00
+tags = ["hugo", "emacs"]
 type = "post"
 draft = false
 +++

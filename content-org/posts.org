@@ -93,7 +93,7 @@ So maybe that at least gives me more material to write about here.
 :EXPORT_FILE_NAME: getting-things-done
 :END:
 
-** DONE Adding screenshots to a post                           :hugo:emacs:org:
+** DONE Adding screenshots to a post                               :hugo:emacs:
 CLOSED: [2019-05-04 Sat 21:38]
 :PROPERTIES:
 :EXPORT_FILE_NAME: adding-screenshots-to-a-post
