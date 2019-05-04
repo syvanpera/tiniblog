@@ -11,7 +11,7 @@
 :EXPORT_HUGO_SECTION: posts
 :EXPORT_HUGO_TYPE: post
 :END:
-** DONE Let's try this blogging thing again                    :emacs:hugo:org:
+** DONE Let's try this blogging thing again                    :hugo:emacs:org:
 CLOSED: [2019-05-02 Thu 13:39]
 :PROPERTIES:
 :EXPORT_FILE_NAME: here-we-go-again
@@ -87,6 +87,82 @@ to Emacs and command line and it's going to take some time to get it all set up
 just the way I want it and get everything running as smoothly as possible.
 
 So maybe that at least gives me more material to write about here.
+
+** TODO Getting things done                                     :gtd:org:emacs:
+:PROPERTIES:
+:EXPORT_FILE_NAME: getting-things-done
+:END:
+
+** DONE Adding screenshots to a post                           :hugo:emacs:org:
+CLOSED: [2019-05-04 Sat 21:38]
+:PROPERTIES:
+:EXPORT_FILE_NAME: adding-screenshots-to-a-post
+:END:
+
+In my previous post I mentioned that one thing I would like to tweak in my
+blogging workflow is to have an easier method of adding screenshots to my posts.
+
+And here's what I came up with for now.
+
+The winning combination: Flameshot & Emacs YASnippets
+
+I've setup a keyboard shortcut (=Super+4=, a nod towards macOS shortcuts) that
+launches [[https://flameshot.js.org/#/][Flameshot]], which allows me to take the actual screenshot. When I save
+the shot, I've set it up so that it automatically saves it to
+=~/Pictures/Screenshots= folder with the name =scrot-<timestamp>.png=
+
+Then I have a snippet called =scrot= defined (using [[https://github.com/joaotavora/yasnippet][YASnippet]]), which calls a
+small elisp function that calls a simple shell script, which copies the latest
+screenshot from the =~/Pictures/Screenshots= folder to my Hugo static image
+folder and also returns the proper path to the image which can be used in a Hugo
+=figure=.
+
+So basically all I do is hit =Super+4=, take the shot and in Emacs I just type
+=scrot= and hit ~TAB~, write the caption and bam! Instant embedded screenshot!
+
+Below you can see the YASnippet definition, elisp function and shell script used.
+
+#+caption: The snippet that inserts the Hugo figure
+#+BEGIN_SRC elisp
+# -*- mode: snippet -*-
+# name: Add latest screenshot as a Hugo figure
+# key: scrot
+# --
+#+caption: $0
+[[`(ts/scrot-to-blog)`]]
+#+END_SRC
+
+#+caption: The elisp function called from the snippet
+#+BEGIN_SRC elisp
+(defun ts/scrot-to-blog ()
+  (interactive)
+  (shell-command-to-string "~/scripts/scrot-to-blog.sh"))
+#+END_SRC
+
+#+caption: And finally the shell script that does the actual work
+#+BEGIN_SRC bash
+#!/usr/bin/env bash
+
+filemask=~/Pictures/Screenshots/scrot-*
+blog_img_dir=~/projects/personal/tiniblog/static/images
+
+unset -v latest
+for file in $filemask; do
+  [[ $file -nt $latest ]] && latest=$file
+done
+
+if [[ ! -z "$latest" ]]
+then
+  cp $latest $blog_img_dir
+  echo -n "/images/$(basename $latest)"
+fi
+#+END_SRC
+
+Next step? I'd probably like to try and convert the shell script to elisp so I
+could get rid of the shell script altogether. Of course the shell script has the
+added benefit of being able to use it outside of Emacs.
+
+But then again, why would I ever want to do anything outside of Emacs?
 
 * COMMENT Local Variables                                              :ARCHIVE:
 # Local Variables:

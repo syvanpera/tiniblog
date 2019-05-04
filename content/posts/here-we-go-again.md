@@ -2,8 +2,8 @@
 title = "Let's try this blogging thing again"
 author = ["Tuomo Syvänperä"]
 date = 2019-05-02T13:39:00+03:00
-lastmod = 2019-05-03T10:12:19+03:00
-tags = ["emacs", "hugo", "org"]
+lastmod = 2019-05-03T22:27:39+03:00
+tags = ["hugo", "emacs", "org"]
 type = "post"
 draft = false
 +++
