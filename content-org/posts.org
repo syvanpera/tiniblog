@@ -106,9 +106,9 @@ And here's what I came up with for now.
 
 The winning combination: Flameshot & Emacs YASnippets
 
-I've setup a keyboard shortcut (=Super+4=, a nod towards macOS shortcuts) that
-launches [[https://flameshot.js.org/#/][Flameshot]], which allows me to take the actual screenshot. When I save
-the shot, I've set it up so that it automatically saves it to
+I've setup a keyboard shortcut (=Super+Shift+4=, a nod towards macOS shortcuts)
+that launches [[https://flameshot.js.org/#/][Flameshot]], which allows me to take the actual screenshot. When I
+save the shot, I've set it up so that it automatically saves it to
 =~/Pictures/Screenshots= folder with the name =scrot-<timestamp>.png=
 
 Then I have a snippet called =scrot= defined (using [[https://github.com/joaotavora/yasnippet][YASnippet]]), which calls a

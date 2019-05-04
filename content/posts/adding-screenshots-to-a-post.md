@@ -2,7 +2,7 @@
 title = "Adding screenshots to a post"
 author = ["Tuomo Syvänperä"]
 date = 2019-05-04T21:38:00+03:00
-lastmod = 2019-05-04T21:38:06+03:00
+lastmod = 2019-05-04T21:41:53+03:00
 tags = ["hugo", "emacs", "org"]
 type = "post"
 draft = false
@@ -15,9 +15,9 @@ And here's what I came up with for now.
 
 The winning combination: Flameshot & Emacs YASnippets
 
-I've setup a keyboard shortcut (`Super+4`, a nod towards macOS shortcuts) that
-launches [Flameshot](https://flameshot.js.org/#/), which allows me to take the actual screenshot. When I save
-the shot, I've set it up so that it automatically saves it to
+I've setup a keyboard shortcut (`Super+Shift+4`, a nod towards macOS shortcuts)
+that launches [Flameshot](https://flameshot.js.org/#/), which allows me to take the actual screenshot. When I
+save the shot, I've set it up so that it automatically saves it to
 `~/Pictures/Screenshots` folder with the name `scrot-<timestamp>.png`
 
 Then I have a snippet called `scrot` defined (using [YASnippet](https://github.com/joaotavora/yasnippet)), which calls a
