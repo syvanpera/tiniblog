@@ -13,10 +13,10 @@ disqusShortname = "tiniblog"
 
 [params]
   contentTypeName = "post"
-  themeColor = "blue"
   showMenuItems = 2
   fullWidthTheme = false
   centerTheme = true
+  showAuthor = false
 
 [languages]
   [languages.en]
