@@ -2,7 +2,7 @@
 title = "Adding screenshots to a post"
 author = ["Tuomo Syvänperä"]
 date = 2019-05-04T21:38:00+03:00
-lastmod = 2019-05-04T21:44:38+03:00
+lastmod = 2019-05-06T17:44:18+03:00
 tags = ["hugo", "emacs"]
 type = "post"
 draft = false
@@ -13,14 +13,14 @@ blogging workflow is to have an easier method of adding screenshots to my posts.
 
 And here's what I came up with for now.
 
-The winning combination: Flameshot & Emacs YASnippets
+The winning combination: [Flameshot](https://flameshot.js.org/#/) & Emacs [YASnippets](https://github.com/joaotavora/yasnippet)
 
 I've setup a keyboard shortcut (`Super+Shift+4`, a nod towards macOS shortcuts)
-that launches [Flameshot](https://flameshot.js.org/#/), which allows me to take the actual screenshot. When I
+that launches Flameshot, which allows me to take the actual screenshot. When I
 save the shot, I've set it up so that it automatically saves it to
 `~/Pictures/Screenshots` folder with the name `scrot-<timestamp>.png`
 
-Then I have a snippet called `scrot` defined (using [YASnippet](https://github.com/joaotavora/yasnippet)), which calls a
+Then I have a snippet called `scrot` defined (using YASnippet), which calls a
 small elisp function that calls a simple shell script, which copies the latest
 screenshot from the `~/Pictures/Screenshots` folder to my Hugo static image
 folder and also returns the proper path to the image which can be used in a Hugo
