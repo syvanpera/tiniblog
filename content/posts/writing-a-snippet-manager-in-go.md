@@ -2,7 +2,7 @@
 title = "Writing a Snippet Manager in Go"
 author = ["Tuomo Syvänperä"]
 date = 2019-05-17T11:31:00+03:00
-lastmod = 2019-05-17T11:31:10+03:00
+lastmod = 2019-05-17T11:36:08+03:00
 type = "post"
 draft = false
 +++
@@ -50,8 +50,8 @@ C-programming days, but then again it's modern and fresh.
 
 What really took me by surprise, is that even though I've been a proponent for
 functional programming languages and style for some time know, I still managed
-to keep an open mind and embrace a language that certainly is in no way or shape
-a functional language.
+to keep an open mind and embrace a language that certainly is in no way, shape
+or form a functional language.
 
 Next step for me is to start getting the know the concurrent side of Go, as
 that's where the real beef is in Go.

@@ -209,8 +209,8 @@ C-programming days, but then again it's modern and fresh.
 
 What really took me by surprise, is that even though I've been a proponent for
 functional programming languages and style for some time know, I still managed
-to keep an open mind and embrace a language that certainly is in no way or shape
-a functional language.
+to keep an open mind and embrace a language that certainly is in no way, shape
+or form a functional language.
 
 Next step for me is to start getting the know the concurrent side of Go, as
 that's where the real beef is in Go.
