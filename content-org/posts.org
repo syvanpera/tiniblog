@@ -160,7 +160,7 @@ added benefit of being able to use it outside of Emacs.
 
 But then again, why would I ever want to do anything outside of Emacs?
 
-** DONE Writing a Snippet Manager in Go
+** DONE Writing a Snippet Manager in Go                                    :go:
 CLOSED: [2019-05-17 Fri 11:31]
 :PROPERTIES:
 :EXPORT_FILE_NAME: writing-a-snippet-manager-in-go
@@ -223,6 +223,7 @@ pretty neat!
 
 #+caption: Here's a gif of Gossip in action
 [[/images/gossip-demo.gif]]
+
 
 * COMMENT Local Variables                                              :ARCHIVE:
 # Local Variables:

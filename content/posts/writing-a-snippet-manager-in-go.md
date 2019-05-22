@@ -2,7 +2,8 @@
 title = "Writing a Snippet Manager in Go"
 author = ["Tuomo Syvänperä"]
 date = 2019-05-17T11:31:00+03:00
-lastmod = 2019-05-17T11:36:08+03:00
+lastmod = 2019-05-22T11:33:56+03:00
+tags = ["go"]
 type = "post"
 draft = false
 +++
