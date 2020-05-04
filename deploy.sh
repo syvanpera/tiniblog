@@ -10,7 +10,7 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
 
   git remote add deploy "travis@blog.tinimini.fi:/home/tuomo/docker/config/www/blog"
   git config user.name "Travis CI"
-  git config user.email "your.email+travis@gmail.com"
+  git config user.email "tuomo.syvanpera+travis@gmail.com"
 
   git add .
   git commit -m "Deploy"
