@@ -2,7 +2,7 @@
 set -xe
 
 if [ $TRAVIS_BRANCH == 'master' ] ; then
-  cd public
+  cd $HOME/public
   git init
 
   git remote add deploy "travis@blog.tinimini.fi:/home/tuomo/docker/config/www/blog"

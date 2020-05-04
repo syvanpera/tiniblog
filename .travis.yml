@@ -1,21 +1,24 @@
-language: go
+language: bash
 
-go:
-  - 1.11
+services:
+- docker
 
 addons:
-  ssh_known_hosts: website.com
+  ssh_known_hosts: blog.tinimini.fi
 
 before_install:
-  - bash _scripts/install.sh
+- openssl aes-256-cbc -K $encrypted_0ddd2445e49f_key -iv $encrypted_0ddd2445e49f_iv
+  -in travis_rsa.enc -out travis_rsa -d
+- chmod 600 travis_rsa
+- mv travis_rsa ~/.ssh/id_rsa
 
 script:
-  - hugo -d public
+- echo $(pwd)
+- docker run --rm -i
+  -v $TRAVIS_BUILD_DIR:/src
+  -v $HOME/public:/target
+  klakegg/hugo:0.69.2
 
-deploy:
-  provider: script
-  script: bash _scripts/deploy.sh
-  skip_cleanup: true
-  on:
-    branch: master
+after_success:
+- bash ./deploy.sh
 
