@@ -2,9 +2,6 @@
 set -xe
 
 if [ $TRAVIS_BRANCH == 'master' ] ; then
-  eval "$(ssh-agent -s)"
-  ssh-add ~/.ssh/id_rsa
-
   cd public
   git init
 
