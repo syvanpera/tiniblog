@@ -13,7 +13,7 @@ lately and was looking for a good project with which to flex my Go muscles.
 
 There are quite a few snippet managers in the world already, but most of the
 best ones have a GUI and I was looking for something that I could use
-exclusively on the command line.
+exclusively from the command line.
 
 I found a few command line ones too, like [Buku](https://github.com/jarun/Buku) and [Pet](https://github.com/knqyf263/pet), but none of them were
 quite what I was looking for. Buku is great for managing bookmarks and Pet for
@@ -32,11 +32,12 @@ to it, but it's already quite usable.
 
 So what do I think of Go after this small excursion into it?
 
-Well, I really really like it but then again some things I have a mixed feeling
-about. I love some features like the deferred function calls and the structural
-typing. But some things like the extensive use of `nil` isn't really my thing.
-And the language, or some popular libraries at least (looking at you [Cobra](https://github.com/spf13/cobra) and
-[Viper](https://github.com/spf13/viper)) seem to encourage the use of global state and variables quite heavily.
+Well, I really really like it but then again there are also some things I have a
+mixed feeling about. I love some features like the deferred function calls and
+the structural typing. But some things like the extensive use of `nil` isn't
+really my thing.  And the language, or some popular libraries at least (looking
+at you [Cobra](https://github.com/spf13/cobra) and [Viper](https://github.com/spf13/viper))
+seem to encourage the use of global state and variables quite heavily.
 But global stuff does make some things easier too, if you use them sparingly.
 
 And Go seems like a perfect fit for REST API servers and microservices. Actually

@@ -13,10 +13,10 @@ before_install:
 - mv travis_rsa ~/.ssh/id_rsa
 
 script:
-- echo $(pwd)
+- mkdir $TRAVIS_BUILD_DIR/public
 - docker run --rm -i
   -v $TRAVIS_BUILD_DIR:/src
-  -v $HOME/public:/target
+  -v $TRAVIS_BUILD_DIR/public:/target
   klakegg/hugo:0.69.2
 
 after_success:
