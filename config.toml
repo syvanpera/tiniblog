@@ -1,6 +1,7 @@
 baseURL = "https://blog.tinimini.fi/"
+title = "Tiniblog"
 languageCode = "en-us"
-theme = "terminal"
+theme = "hello-friend-ng"
 paginate = 5
 
 # Enable syntax highlighting.
@@ -12,18 +13,34 @@ pygmentscodefencesguesssyntax = true
 disqusShortname = "tiniblog"
 
 [params]
-  contentTypeName = "post"
-  showMenuItems = 2
-  fullWidthTheme = false
-  centerTheme = true
-  showAuthor = false
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Subtitle for home
+  homeSubtitle = "It's nothing much really"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
 
 [languages]
   [languages.en]
     title = "Tiniblog"
     subtitle = "It's nothing much really"
     keywords = ""
-    copyright = ""
+    copyright = 'Tuomo Syvänperä'
     menuMore = "Show more"
     readMore = "Read more"
     readOtherPosts = "Read other posts"
@@ -31,6 +48,11 @@ disqusShortname = "tiniblog"
     [languages.en.params.logo]
       logoText = "Tiniblog"
       logoHomeLink = "/"
+
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "/posts"
 
     # [languages.en.menu]
     #   [[languages.en.menu.main]]
