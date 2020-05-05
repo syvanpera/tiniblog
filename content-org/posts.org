@@ -224,6 +224,20 @@ pretty neat!
 #+caption: Here's a gif of Gossip in action
 [[/images/gossip-demo.gif]]
 
+** TODO Getting things organized with Emacs                        :org:emacs:
+:PROPERTIES:
+:EXPORT_FILE_NAME: getting-things-organized-with-emacs
+:END:
+
+I've been wanting to get into GTD and/or other organization methods to get a
+better grasp at my daily routines and stuff that I need to do.
+
+Emacs with org-mode is a really elegant solution to this.
+
+** TODO Using Ansible to bootstrap my development environment
+:PROPERTIES:
+:EXPORT_FILE_NAME: using-ansible-to-bootstrap-my-development-environment
+:END:
 
 * COMMENT Local Variables                                              :ARCHIVE:
 # Local Variables:

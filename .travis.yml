@@ -15,6 +15,7 @@ before_install:
 script:
 - mkdir $TRAVIS_BUILD_DIR/public
 - docker run --rm -i
+  -e HUGO_ENV=production
   -v $TRAVIS_BUILD_DIR:/src
   -v $TRAVIS_BUILD_DIR/public:/target
   klakegg/hugo:0.69.2
